@@ -1,19 +1,71 @@
-body{
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(204, 204, 204);
-    border: solid black 1px;
-    justify-content: space-around;
-    font-family: 'Roboto Mono', serif;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+.navbar-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  font-family: "Roboto Mono", serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  justify-self: center;
+}
+
+.mainarea {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(99, 38, 38);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.intro {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(0, 0, 0);
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+}
+
+.socials {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
