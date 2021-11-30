@@ -122,12 +122,8 @@ h1 {
 }
 
 .projects {
-  width: 100%;
   height: 800px;
   background-color: rgb(50, 50, 50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .aboutme {
@@ -144,6 +140,8 @@ h1 {
 }
 
 .project-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -162,6 +160,9 @@ h1 {
   color: #ef744b;
 }
 
+.footer {
+  background-color: linen;
+}
 @media only screen and (max-width: 800px) {
   .image-container {
     width: 0;
@@ -172,10 +173,17 @@ h1 {
     margin: 0;
     padding: 0;
   }
+
   .projects {
-    flex-direction: row;
-    text-align: center;
-    padding: 80px;
-    background: rgb(50, 50, 50);
+    height: auto;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+  .intro-para {
+    width: 80%;
+    height: 200px;
+    transform: translateX(0px);
   }
 }
