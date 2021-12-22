@@ -1,10 +1,5 @@
-* {
-  font-family: "Roboto Mono", monospace;
-}
-
 body {
-  background: linear-gradient(90deg, rgb(200, 100, 100), rgb(80, 20, 220));
-  color: white;
+  font-family: "Work Sans", sans-serif;
 }
 
 h1 {
@@ -25,14 +20,10 @@ h1 {
 .navbar {
   display: flex;
   flex-direction: row;
-  width: 1000%;
-  height: 40px;
+  width: 100%;
+  height: 80px;
   background-color: rgb(255, 255, 255);
   justify-content: space-between;
-  font-family: "Roboto Mono", serif;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  justify-self: center;
 }
 
 .section {
@@ -44,7 +35,11 @@ h1 {
 }
 
 .intro {
-  background: black;
+  background: rgb(26, 25, 25);
+  background-image: url("intro-pattern.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: #ef744b;
 }
 
 .social {
@@ -58,26 +53,23 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .intro-logo {
   width: 30px;
   height: 40px;
-  margin-left: 50px;
+  margin: 20px;
   object-fit: contain;
   align-self: center;
 }
 
 .gradient_text {
-  background: linear-gradient(90deg, rgb(200, 100, 100), rgb(80, 20, 220));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.gradient_text:hover {
-  background: linear-gradient(270deg, rgb(200, 100, 100), rgb(80, 20, 220));
+  background-image: linear-gradient(
+    90deg,
+    rgb(200, 100, 100),
+    rgb(80, 20, 220)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -91,10 +83,6 @@ h1 {
   display: table;
 }
 
-.profile-pic {
-  border-radius: 50%;
-}
-
 .flex {
   width: 100%;
   height: 100px;
@@ -103,27 +91,13 @@ h1 {
 }
 
 .intro-para {
-  width: 80%;
+  width: 50%;
   height: 200px;
-  transform: translateX(-300px);
-}
-
-.image-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  background-color: white;
-}
-
-.glow {
-  box-shadow: 0 0 50px 10px rgb(10, 10, 10),
-    20px 20px 200px 20px rgb(45, 0, 150);
 }
 
 .projects {
   height: 800px;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(157 157 157);
   flex-direction: column;
 }
 .aboutme {
@@ -135,13 +109,12 @@ h1 {
   height: 500px;
   box-shadow: 5px 5px 20px rgb(0, 0, 0);
   margin: 20px;
+  border-radius: 10px;
   background: rgb(83, 83, 83);
   text-align: center;
 }
 
 .project-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -151,23 +124,41 @@ h1 {
 }
 
 .project-image {
-  margin-top: 30px;
-  width: 250px;
-  border-radius: 20%;
+  margin-top: 10px;
+  width: 280px;
+  border-radius: 10px;
+  opacity: 20%;
+  box-shadow: 5px 5px 20px rgb(44, 44, 44);
 }
 .project-link {
   text-decoration: none;
-  color: #ef744b;
+  font-size: 20px;
+  color: #2e3f8b;
 }
 
 .footer {
-  background-color: linen;
+  background-image: url("mountain img.jpg");
+  background-color: rgb(36, 36, 36);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.footerdiv {
+  width: 200px;
+  height: 300px;
+  background: rgb(0, 0, 0);
+  margin: 20px;
+  color: rgb(41, 41, 41);
+  text-align: center;
+}
+
+.copyright {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: rgb(82, 82, 82);
 }
 @media only screen and (max-width: 800px) {
-  .image-container {
-    width: 0;
-    height: 0;
-  }
   h1 {
     font-size: 50px;
     margin: 0;
@@ -184,6 +175,12 @@ h1 {
   .intro-para {
     width: 80%;
     height: 200px;
-    transform: translateX(0px);
+  }
+  .project-card {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    margin: 20px;
+    background: rgb(83, 83, 83);
+    border-radius: 10px;
+    text-align: center;
   }
 }
