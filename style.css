@@ -156,14 +156,36 @@ h1 {
 }
 
 .skills {
-  background-color: rgb(76, 77, 76);
+  background-color: rgb(83, 83, 83);
   justify-content: space-evenly;
-  padding-top: 100px;
+  padding-top: 30px;
+  background-image: url("skillimg.png");
+  background-blend-mode: soft-light;
+}
+.skillheading {
+  width: 250px;
+  height: auto;
+  color: #000000;
+  font-size: 30px;
 }
 .skilldiv {
   width: 300px;
-  height: 60%;
-  background-color: #373838;
+  height: 40%;
+  background-color: #535353;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 10px 10px 30px 5px #2f3344;
+  border: solid rgb(153, 136, 136);
+  border-radius: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 10px;
+  font-weight: lighter;
+  font-size: larger;
 }
 .footer {
   background-image: url("mountain img.jpg");
