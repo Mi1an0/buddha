@@ -15,6 +15,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .navbar {
@@ -24,6 +25,23 @@ h1 {
   height: 80px;
   background-color: rgb(255, 255, 255);
   justify-content: space-between;
+}
+
+.pages {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  color: #2e3f8b;
 }
 
 .section {
@@ -43,23 +61,24 @@ h1 {
 }
 
 .social {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .socials {
-  width: 150px;
-  height: 40px;
+  width: 500px;
+  height: 250px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-self: center;
   margin-top: 20px;
 }
 
-.intro-logo {
-  width: 30px;
-  height: 40px;
-  margin: 20px;
+.mainlogo {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  margin-left: 50px;
   object-fit: contain;
   align-self: center;
 }
@@ -76,7 +95,7 @@ h1 {
 }
 
 .gradient_text::before {
-  content: "Hello!";
+  content: "Namaste!";
   font-size: 2rem;
   color: #ffffff;
   background-color: red;
@@ -136,11 +155,21 @@ h1 {
   color: #2e3f8b;
 }
 
+.skills {
+  background-color: rgb(76, 77, 76);
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+.skilldiv {
+  width: 300px;
+  height: 60%;
+  background-color: #373838;
+}
 .footer {
   background-image: url("mountain img.jpg");
   background-color: rgb(36, 36, 36);
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
 }
 
 .footerdiv {
